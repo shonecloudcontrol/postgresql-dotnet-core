@@ -1,0 +1,24 @@
+app:
+    name: Postgres Dotnet Core
+    code: POSTGRESDOTNETCORE
+    notify: aborra@ecloudcontrol.com
+    
+build:
+    version: 0.4
+    env: DEV
+    build_file: none
+    output_files: output/*.zip
+    image_template: dotnet-0.4
+    
+deploy:
+    context: anushab7/DEV
+    type: statefulset
+    replicas: 1
+    port:
+    - 8081 
+    
+properties:
+   ALLOW_ANONYMOUS: true
+   ASPNETCORE_ENVIRONMENT: Development
+   DLL: PostgreSqlDotnetCore.dll
+   revision: 11

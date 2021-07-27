@@ -8,7 +8,7 @@ build:
     env: DEV
     build_file: none
     args:
-      DOTNETVERSION: 3.1
+      DOTNETVERSION: "3.1"
       WORKDIRBUILD: /src
       CSPROJFILEPATH1: /PostgreSqlDotnetCore/PostgreSqlDotnetCore.csproj
     output_files: output/*.zip

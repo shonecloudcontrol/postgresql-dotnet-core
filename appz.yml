@@ -4,7 +4,7 @@ app:
     notify: aborra@ecloudcontrol.com
     
 build:
-    version: 0.4
+    version: 3.1
     env: DEV
     build_file: none
     args:

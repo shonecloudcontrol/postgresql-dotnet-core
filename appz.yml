@@ -9,10 +9,10 @@ build:
     build_file: none
     args:
       DOTNETVERSION: "3.1"
-      WORKDIRBUILD: /src
-      CSPROJFILEPATH1: /PostgreSqlDotnetCore/PostgreSqlDotnetCore.csproj
+      BUILD_DIR: /src
+      PROJECT_PATH: /PostgreSqlDotnetCore/PostgreSqlDotnetCore.csproj
     output_files: output/*.zip
-    image_template: dotnet-0.4
+    image_template: dotnet-3.1
     
 deploy:
     context: anushab7/DEV
@@ -23,7 +23,6 @@ deploy:
 properties:
    DOTNETDB_PASSWORD:
       vault: DOTNETDB_PASSWORD
-   ALLOW_ANONYMOUS: true
    ASPNETCORE_ENVIRONMENT: Development
    DLL: PostgreSqlDotnetCore.dll
    revision: 14

@@ -10,6 +10,7 @@ build:
     args:
       BUILD_DIR: /src
       PROJECT_PATH: /PostgreSqlDotnetCore/PostgreSqlDotnetCore.csproj
+      NUGET_CONFIG: /Nuget.Config
     output_files: output/*.zip
     image_template: dotnet-3.1
     

@@ -22,6 +22,7 @@ deploy:
     
 properties:
    DB_SERVER: postgres13-master-13-x
+   DB_PORT: 5432
    DB_USERNAME: username
    DB_NAME: dbname
    DB_PASSWORD:

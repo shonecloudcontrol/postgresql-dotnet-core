@@ -21,7 +21,10 @@ deploy:
     - 80
     
 properties:
-   DOTNETDB_PASSWORD:
+   DB_SERVER: postgres13-master-13-x
+   DB_USERNAME: username
+   DB_NAME: dbname
+   DB_PASSWORD:
       vault: DOTNETDB_PASSWORD
    ASPNETCORE_ENVIRONMENT: Development
    DLL: PostgreSqlDotnetCore.dll

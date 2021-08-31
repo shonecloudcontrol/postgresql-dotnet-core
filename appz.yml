@@ -1,7 +1,7 @@
 app:
     name: Postgres Dotnet Core
     code: POSTGRESDOTNETCORE
-    notify: appz@ecloudcontrol.com
+    notify: svarkey@ecloudcontrol.com
     
 build:
     version: 3.1
@@ -15,7 +15,7 @@ build:
     image_template: dotnet-3.1
     
 deploy:
-    context: alpha/DEV
+    context: shonecloudcontrol/DEV
     replicas: 1
     port:
     - 80

@@ -29,4 +29,4 @@ properties:
       vault: POSTGRESQL_DOTNET_PASSWORD
    ASPNETCORE_ENVIRONMENT: Development
    DLL: PostgreSqlDotnetCore.dll
-   revision: 26
+   revision: 27

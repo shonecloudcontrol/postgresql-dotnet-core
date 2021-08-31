@@ -26,7 +26,7 @@ properties:
    DB_USERNAME: username
    DB_NAME: dbname
    DB_PASSWORD:
-      vault: DOTNETDB_PASSWORD
+      vault: POSTGRESQL_DOTNET_PASSWORD
    ASPNETCORE_ENVIRONMENT: Development
    DLL: PostgreSqlDotnetCore.dll
    revision: 26
